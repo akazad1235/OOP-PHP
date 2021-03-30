@@ -1,16 +1,16 @@
 <?php
     class Person{
+        public $name;
+        public $age; 
 
-        public $name = "azad";
-
-         public function __construct(){
-            echo "this is constructor";
+         public function __construct($n, $a){
+           $this->name = $n;
+           $this->age = $a;
         }
         function names(){
-            $age = 10;
-            echo ($age);
+            echo $this->name;
         }
     }
-    $obj = new Person;
-     $obj->names();
+    $obj = new Person("ak azad", 25);
+    $obj->names();
 ?>
